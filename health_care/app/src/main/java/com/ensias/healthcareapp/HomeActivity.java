@@ -2,7 +2,9 @@ package com.ensias.healthcareapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,8 +23,9 @@ public class HomeActivity extends AppCompatActivity {
     Button profile;
     Button appointment;
     Button remindmeappoint;
-    Button chatbotBtn;
     Button aware;
+    Button chatbotBtn;
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +39,15 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+        chatbotBtn = findViewById(R.id.chatbot);
+        chatbotBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "https://mediafiles.botpress.cloud/47ff0fa8-c3fa-4a87-ac21-d2fe3bb52ad8/webchat/bot.html "; // Replace with your URL
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                startActivity(intent);
+            }
+        });
 
         aware = findViewById(R.id.vaccaware);
         aware.setOnClickListener(new View.OnClickListener() {

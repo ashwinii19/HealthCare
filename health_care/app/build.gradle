@@ -77,7 +77,6 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
-
     tasks.withType(JavaCompile).configureEach{options.fork = true
         options.forkOptions.jvmArgs +=[
                 '--add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED',
@@ -85,3 +84,5 @@ dependencies {
                 '--add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED']}
 }
 //apply plugin: 'com.google.firebase.crashlytics'
+
+apply plugin: 'com.google.gms.google-services'

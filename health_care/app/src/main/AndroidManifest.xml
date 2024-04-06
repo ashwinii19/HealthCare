@@ -17,6 +17,8 @@
         <activity android:name=".MyCalendarDoctorActivity"></activity>
         <activity android:name=".webviewremind"/>
         <activity android:name=".vaccawarness"/>
+        <activity android:name=".VaccinationCountdownActivity"/>
+
         <activity android:name=".TestActivity" />
         <activity android:name=".AppointementActivity" />
         <activity android:name=".FicheInfo" />
@@ -26,12 +28,12 @@
         <activity android:name=".PatientRequestPage" />
         <activity android:name=".DoctorHomeActivity" />
         <activity android:name=".EditProfileDoctorActivity" />
-        <activity android:name=".AddressStatisticsActivity" />
         <activity android:name=".ConfirmedAppointmensActivity" />
         <activity android:name=".PatientAppointementsActivity" />
         <activity android:name=".ProfilePatientActivity" />
-        <activity android:name=".VaccinationCountdownActivity"/>
+        <activity android:name=".AddressStatisticsActivity" />
         <activity android:name=".MyDoctorsAvtivity" />
+        <activity android:name=".CountStatisticsActivity"/>
         <activity android:name=".ProfileDoctorActivity" />
         <activity android:name=".EditProfilePatientActivity" />
         <activity android:name=".DoctorAppointementActivity" />

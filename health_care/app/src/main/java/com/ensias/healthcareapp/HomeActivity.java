@@ -24,6 +24,7 @@ public class HomeActivity extends AppCompatActivity {
     Button appointment;
     Button remindmeappoint;
     Button aware;
+    Button ps;
     Button chatbotBtn;
     @SuppressLint("MissingInflatedId")
     @Override
@@ -46,6 +47,15 @@ public class HomeActivity extends AppCompatActivity {
                 String url = "https://mediafiles.botpress.cloud/47ff0fa8-c3fa-4a87-ac21-d2fe3bb52ad8/webchat/bot.html "; // Replace with your URL
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(intent);
+            }
+        });
+
+        ps = findViewById(R.id.patient_statistics);
+        ps.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent k = new Intent(HomeActivity.this, AddressStatisticsActivity.class);
+                startActivity(k);
             }
         });
 
